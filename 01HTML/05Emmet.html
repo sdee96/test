@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 자식요소 : '>' -->
+    <!-- div>ul>li -->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    <!-- div>p>ul>li -->
+    <div>
+        <p>
+            <ul>
+                <l1></l1>
+            </ul>
+        </p>
+    </div>     
+    <!-- 형제노드 : "+" -->
+    <!-- div>p+ol -->
+    <div>
+        <ul></ul>
+        <ol></ol>
+    </div>
+    <!-- div>p+div+span -->
+    <div>
+        <p></p>
+        <div></div>
+        <span></span>
+    </div>
+    <!-- div>ul>li>a+ul -->
+    <div>
+        <ul>
+            <li>
+                <a href=""></a>
+                <ul></ul>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- 상위 태그로 이동 : '^' -->
+    <!-- div>ul>li>a+ul>li*4 -->
+    <div>
+        <ul>
+            <li>
+                <a href=""></a>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+<!-- div>ul>li^p -->
+<div>
+    <ui>
+        <li></li>
+    </ui>
+    <p></p>
+</div>
+
+
+<!-- div>ul>li*4>a{MENU$}+ul>li*3>a(SUBMENU$) -->
+<div>
+    <ul>
+        <li>
+            <a href="">MENU1</a>
+            <u1>
+                <li><a href="">SUBMENU1</a></li>
+                <li><a href="">SUBMENU2</a></li>
+                <li><a href="">SUBMENU3</a></li>
+            </u1>
+        </li>
+        <li>
+            <a href="">MENU2</a>
+            <u1>
+                <li><a href="">SUBMENU1</a></li>
+                <li><a href="">SUBMENU2</a></li>
+                <li><a href="">SUBMENU3</a></li>
+            </u1>
+        </li>
+        <li>
+            <a href="">MENU3</a>
+            <u1>
+                <li><a href="">SUBMENU1</a></li>
+                <li><a href="">SUBMENU2</a></li>
+                <li><a href="">SUBMENU3</a></li>
+            </u1>
+        </li>
+        <li>
+            <a href="">MENU4</a>
+            <u1>
+                <li><a href="">SUBMENU1</a></li>
+                <li><a href="">SUBMENU2</a></li>
+                <li><a href="">SUBMENU3</a></li>
+            </u1>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+<!-- 클래스명 -->
+<!-- wrapper>ul>menu01>li>a -->
+<wrapper>
+    <ul id="menu01"></ul>
+</wrapper>
+
+
+
+
+
+
+    
+</body>
+</html>
