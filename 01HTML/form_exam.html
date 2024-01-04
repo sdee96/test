@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .join-block{
+            width : 1000px;
+            margin : 50px auto;
+        }
+        .text-label{
+            font-weight :800;
+                               
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+
+<body> 
+    <div class="wrapper">
+        <div class ="join-block"> 
+        <h3>회원가입</h3>
+                  
+    
+    <div>
+       
+        <label for =""  class="form-label" >이름</label>
+        <input type ="text" placeholder  ="이름" class="form-control">
+        
+    </div>
+    <div>
+        <label for ="" class="form-label">주민등록번호</label>
+        <input type ="text"  class="form-control">-<input type ="password" class="form-control">
+    </div>
+    <div>
+        <label for="" class="form-label">아이디</label>
+        <input type="text" placeholder = "영문,숫자를 포함한 8자 이상" class="form-control">
+    </div>
+
+    <div>
+        <label for="" class="form-label">비밀번호</label>
+        <input type="password" placeholder = "영문,숫자를 포함한 12자 이상" class="form-control">
+    </div>
+
+    <div>
+        <label for="" class="form-label">비밀번호 확인</label>
+        <input type="password" placeholder = "영문,숫자를 포함한 12자 이상" class="form-control">
+    </div>
+
+    <div>
+        <lable for="" class="form-label" >비밀번호 힌트/답변</lable> 
+        <select name="hint">
+            <option value="father name">아버지의 성함은?</option>
+            <option value="mother name">어머니의 성함은?</option>
+            <option value="best friends">친한친구의 이름은?</option>
+            <option value="home sweet home">나의 고향은?</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="" class="form-label">답변</label>
+        <input type="text" placeholder="답변"class="form-control">
+    </div>
+
+    <div>
+        <label for="" class="form-label">이메일</label>
+        <input type="url" class="form-control">
+        <select value="domain">
+            <option value="myself">직접입력</option>
+            <option value="naver">naver.com</option>
+            <option value="daum">hanmail.net</option>
+            <option value="nate">nate.com</option>
+            <option value="google">gmail.com</option>
+            
+
+        </select>
+    </div>
+    
+    <div>
+        <label for="" class="form-label">주소</label>
+        <input type="text" class="form-control">
+    </div>
+
+    <div>
+        <label for="">전화번호</label>
+        <input type="text">-<input type="text">-<input type ="text">
+    </div>
+    
+    <div>
+        <label for="">핸드폰 번호</label>
+        <input type="text">-<input type="text">-<input type ="text">
+    </div>
+
+    <div>
+        <label for="0">직업</label>
+        <select name="job">
+            <option value="employer">사업자</option>
+            <option value="employee">직장인</option>
+            <option value="student">학생</option>
+            <option value="Freelance">프리랜서</option>
+            <option value="nothing">무직</option>
+        </select>   
+    </div>
+
+    <div>
+        <label for="">메일/sns 정보 수신</label>
+        <input type="radio" name="recieve information" value="YES" ><span>수신</span>
+        <input type="radio" name="recieve information" value="NO"><span>수신거부</span>
+
+    </div>
+
+    <div>
+        <label for="">관심분야</label>
+        <input type="checkbox" name ="saeng" value="saeng"><span>생두</span>
+        <input type="checkbox" name ="won" value="wod"><span>원두</span>
+        <input type="checkbox" name ="roasting" value="roasting"><span>로스팅</span>
+        <input type="checkbox" name ="hand drip" value="hand drip"><span>핸드드립</span>
+        <input type="checkbox" name ="espresso" value="espresso"><span>에스프레소</span>
+        <input type="checkbox" name ="founder" value="founder"><span>창업</span>
+        
+    </div>
+
+    <div>
+        <label for="">가입경로</label>
+        <select name="sign in path">
+            <option value = "web serching">웹 서칭</option>
+            <option value = "advertising">광고</option>
+            <option value = "by someone's recommend">추천</option>
+            <option value = "web serching">웹 서칭</option>
+
+        </select>
+    </div>
+
+    <div>
+        <label for="">정보공개여부</label>
+        <select value ="open information">
+            <option value="open info yes">동의</option>
+            <option value="open info no">동의하지 않음</option>
+
+        </select>      
+    </div>
+    <hr>
+    <div>
+        <input type="submit" value ="회원가입"><input type="reset" value="취소">
+        </div>
+    </div>
+    </div>
+
+
+
+
+    
+
+
+    
+</body>
+</html>
