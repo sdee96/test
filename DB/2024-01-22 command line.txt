@@ -1,0 +1,573 @@
+Microsoft Windows [Version 10.0.19045.3930]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Administrator>mysql -u root -p
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 17
+Server version: 8.0.36 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> use mysql;
+Database changed
+mysql> show tables;
++------------------------------------------------------+
+| Tables_in_mysql                                      |
++------------------------------------------------------+
+| columns_priv                                         |
+| component                                            |
+| db                                                   |
+| default_roles                                        |
+| engine_cost                                          |
+| func                                                 |
+| general_log                                          |
+| global_grants                                        |
+| gtid_executed                                        |
+| help_category                                        |
+| help_keyword                                         |
+| help_relation                                        |
+| help_topic                                           |
+| innodb_index_stats                                   |
+| innodb_table_stats                                   |
+| ndb_binlog_index                                     |
+| password_history                                     |
+| plugin                                               |
+| procs_priv                                           |
+| proxies_priv                                         |
+| replication_asynchronous_connection_failover         |
+| replication_asynchronous_connection_failover_managed |
+| replication_group_configuration_version              |
+| replication_group_member_actions                     |
+| role_edges                                           |
+| server_cost                                          |
+| servers                                              |
+| slave_master_info                                    |
+| slave_relay_log_info                                 |
+| slave_worker_info                                    |
+| slow_log                                             |
+| tables_priv                                          |
+| time_zone                                            |
+| time_zone_leap_second                                |
+| time_zone_name                                       |
+| time_zone_transition                                 |
+| time_zone_transition_type                            |
+| user                                                 |
++------------------------------------------------------+
+38 rows in set (0.01 sec)
+
+mysql> select *from user;
++-----------+------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+------------+-----------------+------------+------------+--------------+------------+-----------------------+------------------+--------------+-----------------+------------------+------------------+----------------+---------------------+--------------------+------------------+------------+--------------+------------------------+----------+------------------------+--------------------------+----------------------------+---------------+-------------+-----------------+----------------------+-----------------------+------------------------------------------------------------------------+------------------+-----------------------+-------------------+----------------+------------------+----------------+------------------------+---------------------+--------------------------+-----------------+
+| Host      | User             | Select_priv | Insert_priv | Update_priv | Delete_priv | Create_priv | Drop_priv | Reload_priv | Shutdown_priv | Process_priv | File_priv | Grant_priv | References_priv | Index_priv | Alter_priv | Show_db_priv | Super_priv | Create_tmp_table_priv | Lock_tables_priv | Execute_priv | Repl_slave_priv | Repl_client_priv | Create_view_priv | Show_view_priv | Create_routine_priv | Alter_routine_priv | Create_user_priv | Event_priv | Trigger_priv | Create_tablespace_priv | ssl_type | ssl_cipher             | x509_issuer              | x509_subject               | max_questions | max_updates | max_connections | max_user_connections | plugin                | authentication_string                                                  | password_expired | password_last_changed | password_lifetime | account_locked | Create_role_priv | Drop_role_priv | Password_reuse_history | Password_reuse_time | Password_require_current | User_attributes |
++-----------+------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+------------+-----------------+------------+------------+--------------+------------+-----------------------+------------------+--------------+-----------------+------------------+------------------+----------------+---------------------+--------------------+------------------+------------+--------------+------------------------+----------+------------------------+--------------------------+----------------------------+---------------+-------------+-----------------+----------------------+-----------------------+------------------------------------------------------------------------+------------------+-----------------------+-------------------+----------------+------------------+----------------+------------------------+---------------------+--------------------------+-----------------+
+| localhost | mysql.infoschema | Y           | N           | N           | N           | N           | N         | N           | N             | N            | N         | N          | N               | N          | N          | N            | N          | N                     | N                | N            | N               | N                | N                | N              | N                   | N                  | N                | N          | N            | N                      |          | 0x                     | 0x                       | 0x                         |             0 |           0 |               0 |                    0 | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | N                | 2024-01-22 10:23:52   |              NULL | Y              | N                | N              |                   NULL |                NULL | NULL                     | NULL            |
+| localhost | mysql.session    | N           | N           | N           | N           | N           | N         | N           | Y             | N            | N         | N          | N               | N          | N          | N            | Y          | N                     | N                | N            | N               | N                | N                | N              | N                   | N                  | N                | N          | N            | N                      |          | 0x                     | 0x                       | 0x                         |             0 |           0 |               0 |                    0 | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | N                | 2024-01-22 10:23:52   |              NULL | Y              | N                | N              |                   NULL |                NULL | NULL                     | NULL            |
+| localhost | mysql.sys        | N           | N           | N           | N           | N           | N         | N           | N             | N            | N         | N          | N               | N          | N          | N            | N          | N                     | N                | N            | N               | N                | N                | N              | N                   | N                  | N                | N          | N            | N                      |          | 0x                     | 0x                       | 0x                         |             0 |           0 |               0 |                    0 | caching_sha2_password | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | N                | 2024-01-22 10:23:52   |              NULL | Y              | N                | N              |                   NULL |                NULL | NULL                     | NULL            |
+| localhost | root             | Y           | Y           | Y           | Y           | Y           | Y         | Y           | Y             | Y            | Y         | Y          | Y               | Y          | Y          | Y            | Y          | Y                     | Y                | Y            | Y               | Y                | Y                | Y              | Y                   | Y                  | Y                | Y          | Y            | Y                      |          | 0x                     | 0x                       | 0x                         |             0 |           0 |               0 |                    0 | caching_sha2_password | $A$005$XO8nLj\rE(o>wvu.vDRKFOc35RQXYi3RB8JNaWWTCPzL/LFv/P7D4zgi8 | N                | 2024-01-22 10:23:57   |              NULL | N              | Y                | Y              |                   NULL |                NULL | NULL                     | NULL            |
++-----------+------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+------------+-----------------+------------+------------+--------------+------------+-----------------------+------------------+--------------+-----------------+------------------+------------------+----------------+---------------------+--------------------+------------------+------------+--------------+------------------------+----------+------------------------+--------------------------+----------------------------+---------------+-------------+-----------------+----------------------+-----------------------+------------------------------------------------------------------------+------------------+-----------------------+-------------------+----------------+------------------+----------------+------------------------+---------------------+--------------------------+-----------------+
+4 rows in set (0.00 sec)
+
+mysql> create database testdb;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databse;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'databse' at line 1
+mysql> show database;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database' at line 1
+mysql> show database;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database' at line 1
+mysql> use testdb;
+Database changed
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> create table tbl_user(
+    -> user_id varchar(10) primary key,
+    -> user_password carchar(100) not null,
+    -> user_name carchar(45) not null );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'carchar(100) not null,
+user_name carchar(45) not null )' at line 3
+mysql> create table tbl user(
+    -> user_id varchar(10) primary key,
+    -> user_password varchar(100) not null,
+    -> user_name varchar(45) not null );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user(
+user_id varchar(10) primary key,
+user_password varchar(100) not null,
+user' at line 1
+mysql> create table tbl_user(
+    -> user_id varchar(10) primary key,
+    -> user_passowrd varchar(100) not null,
+    -> user_name varchar(45) not null);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> show table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> show tables;
++------------------+
+| Tables_in_testdb |
++------------------+
+| tbl_user         |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> create table tbl_project
+    ->
+    ->
+    ->
+    -> ;
+ERROR 4028 (HY000): A table must have at least one visible column.
+mysql> create table tbl_product;
+ERROR 4028 (HY000): A table must have at least one visible column.
+mysql> use tbl_product
+ERROR 1049 (42000): Unknown database 'tbl_product'
+mysql> create table tbl_product;
+ERROR 4028 (HY000): A table must have at least one visible column.
+mysql> use testdb2;
+ERROR 1049 (42000): Unknown database 'testdb2'
+mysql> use test2db;
+Database changed
+mysql> create table tbl_product;
+ERROR 4028 (HY000): A table must have at least one visible column.
+mysql> create table tbl_product(
+    -> prod_id int primary key;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 2
+mysql> use test2db;
+Database changed
+mysql> create table tbl_product(
+    -> prod_id int primary key
+    -> prod_name varchar(100) not null;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'prod_name varchar(100) not null' at line 3
+mysql> use test2db;
+Database changed
+mysql> create table tbl_product(
+    -> prod_id int primary key
+    -> prod_name varchar(100) not null
+    -> prod_category varchar(10) null
+    -> prod_details varchar(1024) null
+    -> reg_date datetime not null
+    -> prod_price int not null);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'prod_name varchar(100) not null
+prod_category varchar(10) null
+prod_details varc' at line 3
+mysql> use test2db;
+Database changed
+mysql> create table tbl_product(
+    -> prod_id int primary key
+    -> prod_name varchar(100) not null
+    -> prod_category varchar(10) null
+    -> prod_details varchar(1024) null
+    -> reg_date datetime notnull
+    -> prod_price int notnull);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'prod_name varchar(100) not null
+prod_category varchar(10) null
+prod_details varc' at line 3
+mysql> create tables tbl_tbl_product(
+    -> prod_id int primary key
+    -> prod_name varchar(100) not null
+    -> prod category varchar(10) null
+    -> prod
+    ->
+    -> asd
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tables tbl_tbl_product(
+prod_id int primary key
+prod_name varchar(100) not null
+' at line 1
+mysql> create table tbl_product(
+    -> prod_id int primary key
+    -> prod_name varchar(100) not null
+    -> prod_category varchar(10) null
+    -> prod_details varchar(1024) null
+    -> reg_date datetime not null
+    -> prod_price int not null);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'prod_name varchar(100) not null
+prod_category varchar(10) null
+prod_details varc' at line 3
+mysql> create table tbl_product(
+    -> prod_id int primary ket,
+    -> );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ket,
+)' at line 2
+mysql> create table tbl_product(
+    -> prod_id int primary key,
+    -> prod_name varchar(100) not null,
+    -> prod_category varchar(10) null,
+    -> prod_details varchar(1024) null,
+    -> reg_date datetime not null,
+    -> prod_price int not null);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> show tables
+    ->
+    -> )
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 3
+mysql> show tables;
++-------------------+
+| Tables_in_test2db |
++-------------------+
+| tbl_product       |
+| tbl_user          |
++-------------------+
+2 rows in set (0.00 sec)
+
+mysql> show table tbl_product;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tbl_product' at line 1
+mysql> show table tbl_product;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tbl_product' at line 1
+mysql> use testdb;
+Database changed
+mysql> show tables;
++------------------+
+| Tables_in_testdb |
++------------------+
+| tbl_user         |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> desc tbl_user;
++---------------+--------------+------+-----+---------+-------+
+| Field         | Type         | Null | Key | Default | Extra |
++---------------+--------------+------+-----+---------+-------+
+| user_id       | varchar(10)  | NO   | PRI | NULL    |       |
+| user_passowrd | varchar(100) | NO   |     | NULL    |       |
+| user_name     | varchar(45)  | NO   |     | NULL    |       |
++---------------+--------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> alter table tbl_user add colimn user_tel varchar(30) null after user_name;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_tel varchar(30) null after user_name' at line 1
+mysql> alter table tbl_user add column user_tel varchar(30) null after user_name;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc tbl_user;
++---------------+--------------+------+-----+---------+-------+
+| Field         | Type         | Null | Key | Default | Extra |
++---------------+--------------+------+-----+---------+-------+
+| user_id       | varchar(10)  | NO   | PRI | NULL    |       |
+| user_passowrd | varchar(100) | NO   |     | NULL    |       |
+| user_name     | varchar(45)  | NO   |     | NULL    |       |
+| user_tel      | varchar(30)  | YES  |     | NULL    |       |
++---------------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> alter table tbl_user drop user_password;
+ERROR 1091 (42000): Can't DROP 'user_password'; check that column/key exists
+mysql> alter table tbl_user drop user_password;
+ERROR 1091 (42000): Can't DROP 'user_password'; check that column/key exists
+mysql> alter table tbl_user drop user_passowrd;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc tbl_user;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| user_id   | varchar(10) | NO   | PRI | NULL    |       |
+| user_name | varchar(45) | NO   |     | NULL    |       |
+| user_tel  | varchar(30) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> use testdb;
+Database changed
+mysql> desc tbl_user;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| user_id   | varchar(10) | NO   | PRI | NULL    |       |
+| user_name | varchar(45) | NO   |     | NULL    |       |
+| user_tel  | varchar(30) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> alter table tbl_user change column user_tel user_phone varchar(100) not null;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc tbl_user
+    -> desc tbl_user;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc tbl_user' at line 2
+mysql> desc tbl_user;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| user_id    | varchar(10)  | NO   | PRI | NULL    |       |
+| user_name  | varchar(45)  | NO   |     | NULL    |       |
+| user_phone | varchar(100) | NO   |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> show table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> show tables;
++------------------+
+| Tables_in_testdb |
++------------------+
+| tbl_user         |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> use test2db;
+Database changed
+mysql> show table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> show tables;
++-------------------+
+| Tables_in_test2db |
++-------------------+
+| tbl_product       |
+| tbl_user          |
++-------------------+
+2 rows in set (0.00 sec)
+
+mysql> alter table tbl_product(
+    -> add column amount int not null,
+    -> change column prod_price product_price varchar(100) null,
+    -> drop prod_details);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(
+add column amount int not null,
+change column prod_price product_price varchar' at line 1
+mysql> alter table tbl_product add column amount int not null;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table tbl_product change column prod_price product_price varchar(100) null;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table tbl_product drop prod_details;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc tbl_product;
++---------------+--------------+------+-----+---------+-------+
+| Field         | Type         | Null | Key | Default | Extra |
++---------------+--------------+------+-----+---------+-------+
+| prod_id       | int          | NO   | PRI | NULL    |       |
+| prod_name     | varchar(100) | NO   |     | NULL    |       |
+| prod_category | varchar(10)  | YES  |     | NULL    |       |
+| reg_date      | datetime     | NO   |     | NULL    |       |
+| product_price | varchar(100) | YES  |     | NULL    |       |
+| amount        | int          | NO   |     | NULL    |       |
++---------------+--------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> alter table tbl_product change product_pirce prod_prive varchar(100) null;
+ERROR 1054 (42S22): Unknown column 'product_pirce' in 'tbl_product'
+mysql> alter table tbl_produce change product_price prod_price varchar (100) null;
+ERROR 1146 (42S02): Table 'test2db.tbl_produce' doesn't exist
+mysql> alter table tbl_product change product_price prod_price varchar(100) null;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc tbl_product;
++---------------+--------------+------+-----+---------+-------+
+| Field         | Type         | Null | Key | Default | Extra |
++---------------+--------------+------+-----+---------+-------+
+| prod_id       | int          | NO   | PRI | NULL    |       |
+| prod_name     | varchar(100) | NO   |     | NULL    |       |
+| prod_category | varchar(10)  | YES  |     | NULL    |       |
+| reg_date      | datetime     | NO   |     | NULL    |       |
+| prod_price    | varchar(100) | YES  |     | NULL    |       |
+| amount        | int          | NO   |     | NULL    |       |
++---------------+--------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> use testdb;
+Database changed
+mysql> insert into testdb.tbl_user(user_id,user_name,user_phone) values ('user10','홍길동'.'010-222-333');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.'010-222-333')' at line 1
+mysql> show tables;
++------------------+
+| Tables_in_testdb |
++------------------+
+| tbl_user         |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> desc tbl_user;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| user_id   | varchar(10)  | NO   | PRI | NULL    |       |
+| user_name | varchar(45)  | NO   |     | NULL    |       |
+| user_tel  | varchar(100) | NO   |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> insert into testdb.tbl_user values(user_id,user_name,user_tel) values('user10','홍길동','010-2222-3333');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'values('user10','홍길동','010-2222-3333')' at line 1
+mysql> insert into testdb. tbl_user values(user_id,user_name,user_tel) values('user10','홍길동','010-2222-333');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'values('user10','홍길동','010-2222-333')' at line 1
+mysql> desc tbl_user;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| user_id   | varchar(10)  | NO   | PRI | NULL    |       |
+| user_name | varchar(45)  | NO   |     | NULL    |       |
+| user_tel  | varchar(100) | NO   |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> insert into testdb.tbl_user values(user_id,user_name,user_tel) values('user10,'홍길동','010-2222-3333');
+    '> insert into testdb.tbl_user values(user_id,user_name,user_tel) values('user10,'홍길동','010-2222-3333');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'values('user10,'홍길동','010-2222-3333');
+insert into testdb.tbl_user values(' at line 1
+mysql> insert into testdb.tbl_user values(user_id,user_name,user_tel) values('user10','홍길동','010-2222-3333');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'values('user10','홍길동','010-2222-3333')' at line 1
+mysql> insert into testdb.tbl_user values(user_id,user_name,user_tel) values('user10,'홍길동','010-2222-3333');
+    '> '
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'values('user10,'홍길동','010-2222-3333');
+'' at line 1
+mysql> insert into testdb.tbl_user values('user_id','user_name','user_tel') values('user30','남길동','1111-2222-3333');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'values('user30','남길동','1111-2222-3333')' at line 1
+mysql> insert into test.db tbl_user (user_id,user_name,user_tel) values('user30','남길동'.'010-2222-4444');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tbl_user (user_id,user_name,user_tel) values('user30','남길동'.'010-2222-4444' at line 1
+mysql> select *from tbl_user;
++---------+-----------+---------------+
+| user_id | user_name | user_tel      |
++---------+-----------+---------------+
+| user1   | 1234      | 10111         |
+| user10  | 홍길동    | 010-2222-3333 |
++---------+-----------+---------------+
+2 rows in set (0.00 sec)
+
+mysql> update tbl_user set user_name='철수' where user_id='user10';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select *from tbl_user;
++---------+-----------+---------------+
+| user_id | user_name | user_tel      |
++---------+-----------+---------------+
+| user1   | 1234      | 10111         |
+| user10  | 철수      | 010-2222-3333 |
++---------+-----------+---------------+
+2 rows in set (0.00 sec)
+
+mysql> select *from tbl_user;
++---------+-----------+---------------+
+| user_id | user_name | user_tel      |
++---------+-----------+---------------+
+| user1   | 1234      | 10111         |
+| user10  | 철수      | 010-2222-3333 |
++---------+-----------+---------------+
+2 rows in set (0.00 sec)
+
+mysql> delete from tbl_user where user_id='user1';
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select *from tbl_user;
++---------+-----------+---------------+
+| user_id | user_name | user_tel      |
++---------+-----------+---------------+
+| user10  | 철수      | 010-2222-3333 |
++---------+-----------+---------------+
+1 row in set (0.00 sec)
+
+mysql> desc tbl_product;
+ERROR 1146 (42S02): Table 'testdb.tbl_product' doesn't exist
+mysql> use test2db;
+Database changed
+mysql> desc tbl_product;
++---------------+--------------+------+-----+---------+-------+
+| Field         | Type         | Null | Key | Default | Extra |
++---------------+--------------+------+-----+---------+-------+
+| prod_id       | int          | NO   | PRI | NULL    |       |
+| prod_name     | varchar(100) | NO   |     | NULL    |       |
+| prod_category | varchar(10)  | YES  |     | NULL    |       |
+| reg_date      | datetime     | NO   |     | NULL    |       |
+| prod_price    | varchar(100) | YES  |     | NULL    |       |
+| amount        | int          | NO   |     | NULL    |       |
++---------------+--------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> insert into test2db.tbl_product(prod_id,prod_name,prod_category,reg_date,prod_price,amount) values('1111','LG_GRAM_2023','2024/01/22','830,000','100');
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> insert into test2db.tbl_product(prod_id,prod_name,prod_category,reg_date,prod_price,amount) values('1111','LG_GRAM_2023','가전','2024/01/22','830,000','100');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> select from *tbl_product;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from *tbl_product' at line 1
+mysql> select *from tbl_product;
++---------+--------------+---------------+---------------------+------------+--------+
+| prod_id | prod_name    | prod_category | reg_date            | prod_price | amount |
++---------+--------------+---------------+---------------------+------------+--------+
+|    1111 | LG_GRAM_2023 | 가전          | 2024-01-22 00:00:00 | 830,000    |    100 |
++---------+--------------+---------------+---------------------+------------+--------+
+1 row in set (0.00 sec)
+
+mysql> insert into test2db.tbl_product(prod_id,prod_name,prod_category,reg_date,prod_price,amount) values('1112','SAMSUNG_FLEX2','가전','2024/01/22','3,000,000','50');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insert into test2db.tbl_product(prod_id,prod_name,prod_category,reg_date,prod_price,amount) values('2000','대우_통돌이_01','가전','2024/01/22','590,000','25');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> insert into test2db.tbl_product(prod_id,prod_name,prod_category,reg_date,prod_price,amount) values('3001','이것이리눅스다','도서','2023/01/22','30,000','1000');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> select *from tbl_product;
++---------+----------------+---------------+---------------------+------------+--------+
+| prod_id | prod_name      | prod_category | reg_date            | prod_price | amount |
++---------+----------------+---------------+---------------------+------------+--------+
+|    1111 | LG_GRAM_2023   | 가전          | 2024-01-22 00:00:00 | 830,000    |    100 |
+|    1112 | SAMSUNG_FLEX2  | 가전          | 2024-01-22 00:00:00 | 3,000,000  |     50 |
+|    2000 | 대우_통돌이_01 | 가전          | 2024-01-22 00:00:00 | 590,000    |     25 |
+|    3001 | 이것이리눅스다 | 도서          | 2023-01-22 00:00:00 | 30,000     |   1000 |
++---------+----------------+---------------+---------------------+------------+--------+
+4 rows in set (0.00 sec)
+
+mysql> upadate tbl_product set reg_date='2023/01/01' where prod_category='가전';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'upadate tbl_product set reg_date='2023/01/01' where prod_category='가전'' at line 1
+mysql> update tbl_product set reg_date='2023/01/01' where prod_category='가전';
+Query OK, 3 rows affected, 3 warnings (0.00 sec)
+Rows matched: 3  Changed: 3  Warnings: 3
+
+mysql> select *from tbl_product;
++---------+----------------+---------------+---------------------+------------+--------+
+| prod_id | prod_name      | prod_category | reg_date            | prod_price | amount |
++---------+----------------+---------------+---------------------+------------+--------+
+|    1111 | LG_GRAM_2023   | 가전          | 2023-01-01 00:00:00 | 830,000    |    100 |
+|    1112 | SAMSUNG_FLEX2  | 가전          | 2023-01-01 00:00:00 | 3,000,000  |     50 |
+|    2000 | 대우_통돌이_01 | 가전          | 2023-01-01 00:00:00 | 590,000    |     25 |
+|    3001 | 이것이리눅스다 | 도서          | 2023-01-22 00:00:00 | 30,000     |   1000 |
++---------+----------------+---------------+---------------------+------------+--------+
+4 rows in set (0.00 sec)
+
+mysql> delete from tbl_product where prod_id='1111';
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select *from tbl_product;
++---------+----------------+---------------+---------------------+------------+--------+
+| prod_id | prod_name      | prod_category | reg_date            | prod_price | amount |
++---------+----------------+---------------+---------------------+------------+--------+
+|    1112 | SAMSUNG_FLEX2  | 가전          | 2023-01-01 00:00:00 | 3,000,000  |     50 |
+|    2000 | 대우_통돌이_01 | 가전          | 2023-01-01 00:00:00 | 590,000    |     25 |
+|    3001 | 이것이리눅스다 | 도서          | 2023-01-22 00:00:00 | 30,000     |   1000 |
++---------+----------------+---------------+---------------------+------------+--------+
+3 rows in set (0.00 sec)
+
+mysql> ^C
+mysql> ^C
+mysql>
