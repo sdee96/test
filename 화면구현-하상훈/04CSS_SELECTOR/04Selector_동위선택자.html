@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin-left : 10px;}
+        .c1{border : 1px solid red;}
+        .c2{border : 1px solid orange;}
+        .c3{border : 1px solid green;}
+        /* ~ : 동위선택자,같은 depth의 하위 모든 선택자 */
+        /* + : 동위선택자,같은 depth의 하위 1개 선택자 */
+        .c1>p{
+            color : blueviolet;}
+        .c2~p{
+            border : 1px solid gray;
+        
+        }
+        .c2+p{
+            background-color : orange;
+        }
+        .c2 p{
+            font-size : 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">
+        <p>1hello</p>
+        <div class="c2">
+            <p>2hello</p>
+            <div class="c3">
+                <p>3hello></p>
+                <p>4hello</p>
+                <p>5hello </p>
+            </div>
+            <p>6hello</p>
+            <p>7hello</p>
+        </div>
+        <p>8h</p>
+        <p>9h</p>
+    </c1>
+
+</body>
+</html>

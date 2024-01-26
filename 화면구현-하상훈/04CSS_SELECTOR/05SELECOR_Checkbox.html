@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type='checkbox']{
+            display : none;
+            
+        }
+        input[type='checkbox']+label{
+            display : block;
+            width : 25px;
+            height:25px;
+           
+            border:1px solid;
+            margin-right : 10px;
+
+        }
+        /* chceked : 체크되었을 때 */
+        input[type='checkbox']:checked+label{
+            background-color: red;
+            background-image : url(./images/check.svg);
+            background-repeat: no-repeat;
+            background-position : center;
+
+        }
+        
+        .chk_block{
+            display : flex;
+            align-items : center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="chk_block">
+        
+        <input type="checkbox" id="chk" />
+        <label for="chk"></label>
+        <span>체크박스</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{width:300px;  border:1px solid;}
+        
+        .parent>div{
+            background-color: orange;
+        
+        }
+        .parent>p{
+            font-size : 1.5rem;
+
+        }
+        .parent>.child{
+            border : 5px dashed green;
+        }
+        .parent p{
+            color : aquamarine;
+
+        }
+        .parent div{
+            font-size : 2rem;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="parent">
+        <div class="child">
+            <div>1 HELLO WORLD</div>
+            <div>2 HELLO WORLD</div>
+            <div>3 HELLO WORLD</div>
+            <p>4 HELLOWORLD</p>
+    </div>
+            
+        
+        <div>5 HELLO WORLD</div>
+        <p>6 HELLOWORLD</p>
+    </div>
+</div>
+</body>
+</html>

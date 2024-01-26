@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration : none;
+            color : black;
+
+        }
+        .btn{
+            display : block;
+            width:130px;
+            height:45px;
+            line-height:45px;
+            text-align:center;
+            border-radius:5px;
+            color:white;
+            font-weight:600;
+            font-size:1.2rem;
+            margin:5px;
+
+        }
+        .btn--primary{ background-color : royalblue;}
+        .btn--secondray{background-color:  orange;}
+        .btn--success{ background-color:  greenyellow;}
+        /* 버튼 갖다댈 때 */
+        .btn:hover{
+            opacity:1;
+            font-size :1.4rem;
+        }
+        /* 버튼 동작할 때 */
+        .btn:active{
+            color : gray;
+            font-size : 1.2rem;
+        }
+        /* 버튼을 1번이상 방문하였을 때 */
+        .btn:visited{
+            color : black;
+            background-color:  brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="./01SELECTOR.html"class="btn btn--primary ">TEST</a> <br/>
+    <a href="./02SELECTOR.html"class="btn btn--secondray ">TEST</a> <br/>
+    <a href="./03SELECTOR_자식선택자.html"class="btn btn--success">TEST</a> <br/>
+    
+  
+</body>
+</html>
