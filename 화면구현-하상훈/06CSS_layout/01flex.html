@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            width : 100vw;
+            height : 100vh;
+
+        }
+
+        .wrapper{
+            width :1536px;
+            height : 864px;
+            border : 1px solid gray;
+            margin : auto;
+            padding : 50px;
+        }
+        .wrapper>.parent{
+            border : 1px solid gray;
+            display : flex;
+            flex-direction: row;
+            align-items: start;
+            height : 150px;
+        }
+        .wrapper>.parent>.child{
+            width: 120px;
+            height : 40px;
+            border : 1px solid;
+            display : flex;
+        }
+
+
+        .wrapper>.parent2{
+            height : 150px;
+            border : 1px solid;
+            margin-top:100px;
+
+            display : flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* item의 크기가 부모를 초과하면 다음 행에서 보여줄지 여부 */
+            flex-wrap : wrap;
+
+
+            /*  */
+            /* align-content: stretch; */
+        }
+        .wrapper>.parent2>.item{
+            width : 200px;
+            /* height: 40px; */
+            border : 1px solid;
+        }
+        .wrapper>.parent2>.item:nth-child(1){}
+        .wrapper>.parent2>.item:nth-child(1){}
+        .wrapper>.parent2>.item:nth-child(1){}
+        .wrapper>.parent2>.item:nth-child(1){}
+
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+        </div>
+        <div class="parent2">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{height : 3000px;}
+        .wrapper{}
+        .wrapper>header{}
+        .wrapper>header>.top-header{}
+        .wrapper>header>nav{}
+        .wrapper>header>nav>.menu{
+            height: 80px;
+            border:  1px solid;
+            list-style-type: none;
+            padding: 0; margin : 0;
+
+            display : flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: beige;
+
+            position : fixed; 
+            width : 100%;
+
+
+            
+        }
+        .wrapper>header>nav>.menu>li{
+            
+        }
+        .wrapper>header>nav>.menu>li>a{
+            text-decoration: none;
+            color : black;
+        }
+        .fixed-btn{
+            position : fixed;
+            top: 80%;
+            left : 80%
+        }
+        .fixed-btn{
+            text-decoration: none;
+            font-size : 4rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- .wrapper>header>.top-header+nav^main>section^footer -->
+    <div class="wrapper">
+        <header>
+            <div class="top-header"></div>
+            <nav>  <!--ul.menu>li*4>a{menu$}-->
+                <ul class="menu">
+                    <li><a href="">menu1</a></li>
+                    <li><a href="">menu2</a></li>
+                    <li><a href="">menu3</a></li>
+                    <li><a href="">menu4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section></section>
+        </main>
+        <footer></footer>
+        <div class="fixed-btn">
+            <a href="javascript:void(0)">
+                ✨
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>
