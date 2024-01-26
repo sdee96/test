@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- BS5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- google icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 24;
+        color:white;
+        font-size : 1.7rem;
+      }
+     </style>
+
+
+    <!-- common.css -->
+    <!-- <link rel="stylesheet" href="./css/common.css"> -->
+
+    <!-- main.css -->
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <header>
+        <div class="top-header"></div>
+        <nav class="center-fit">
+          <div class="left">
+              <div class="logo">
+                <img
+                src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
+                alt=""
+              />
+
+              </div>
+              <div class="menu">
+                <ul>
+                  <li><a href="">홈</a></li>
+                  <li><a href="">시리즈</a></li>
+                  <li><a href="">NEW! 요즘 대세 콘텐츠</a></li>
+                  <li><a href="">내가 찜한 리스트</a></li>
+                  <li><a href="">언어별로 찾아보기</a></li>
+                  
+                </ul>
+
+              </div>
+          </div>
+          <div class="my">
+
+              <div class="search">
+                
+                <input type="checkbox" id="search_chk" />
+                <label for="search_chk">
+                  <span class="material-symbols-outlined">search</span>
+                </label>
+                <input type="text" placeholder="제목,사람,장르">
+              </div>
+
+              <div class="notification">
+                <a href="javascript:void(0)">
+                  <span  class="material-symbols-outlined">notifications</span>
+                </a>
+              </div>
+
+              <div class="my-menu">
+                <img src="https://occ-0-993-988.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABTZ2zlLdBVC05fsd2YQAR43J6vB1NAUBOOrxt7oaFATxMhtdzlNZ846H3D8TZzooe2-FT853YVYs8p001KVFYopWi4D4NXM.png?r=229" />
+              </div>
+              
+          </div>
+          <!-- nav bg -->
+         
+        </nav>
+      </header>
+      <main>
+       
+       
+        <!-- MAIN VIDEO SECTION -->
+        <section class="main-video-block">
+          
+          <div class="image-block">
+              <img src="https://occ-0-993-988.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABeMAmUCc_4JbncsH9naKV11IsjTNWJoQV4DdlVeiINwAaJlHOvqQSQxkk4Q28Rd7azsT8auNzg390dXMa-8uiAClce8KoLm-uJ2g.webp?r=0b0" />
+          </div>
+          <!-- 백그라운드 Grandiant설정 -->
+          <div class="bg-style">TEST</div>
+      
+
+          <!-- LOGO AND TEXT -->
+          <div class="logo-and-text">
+              <div class="title">
+                <img src="https://occ-0-993-988.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABcWoxoTRV09rUUhETKvDt0nUvErkIAOwMHI9ed6ahS4wh_O4QipD_o7Bn07IqPr3L4GlR8BQlKvewHxtEWVLy5GXpSASdf7Qa4cEfidqnx-p.webp?r=99c" alt="">
+              </div>
+              <div class="contents">
+                  <span>마법이 일상인 세계. 존재하는 여러 길드 중 수많은 전설을 만들어낸 길드가 있었으니 이름하여 페어리 테일. 이곳에 모인 각양각색의 마도사들이 마법보다 강한 의리와 우정으로 뭉친다. 도전 가득한 멋진 모험을 위해!</span>
+              </div>
+              <div class="footer">
+                <div>
+                  <a href="" class="play">▶ 재생 </a>
+                </div>
+                <div>
+                  <a rhef="" class="details"> ! 상세정보</a>
+                </div>
+              </div>
+          </div>
+        </section>
+        
+       
+
+
+
+
+
+        <!-- subsection01 -->
+        <section class="sub-items-01">
+
+           <!-- next prev btn -->
+          <input  type="checkbox" id="sub-items-01-prev" name="prev" />
+          <label class="prev" for="sub-items-01-prev"><span class="material-symbols-outlined">arrow_back_ios</span></label>
+           
+          
+          <input type="checkbox" id="sub-items-01-next"  name="next" />
+          <label class="next"   for="sub-items-01-next"><span class="material-symbols-outlined">arrow_forward_ios</span></label>
+        
+          
+          <!-- 01_slider_block -->
+          <div class="slider">
+            
+            <div class="slide"><div class="item i-1"></div></div>
+            <div class="slide"><div class="item i-2"></div></div>
+            <div class="slide"><div class="item i-3"></div></div>
+            <div class="slide"><div class="item i-4"></div></div>
+            <div class="slide"><div class="item i-5"></div></div>
+            <div class="slide">
+              <div class="item i-6">
+                <div class="item-header">
+                  
+                  <div class="image-block">
+                    <img src="https://occ-0-993-988.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABceB9gD8SOkv6IT0F9PGr_zNdIejVpma9PBAbOShgmj1OVyjAleJcdxEL59EfgISNHTV_qfz3Rt8qxEDTAcUv3FHSpgoLjGV0MY.webp?r=b91" alt="">
+                  </div>
+                  <div  class="video-block">
+                    
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/A3lNv_WnVZY?si=XiF8I7g4UcpTFADR&autoplay=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                  </div>
+
+                                     <!-- 백그라운드 Grandiant설정 -->
+                   <div class="bg-style">TEST</div>
+                </div>
+                <div class="item-body">
+                  
+                  <div class="header">
+                    <div class="left">
+                      <span class="material-symbols-outlined">play_circle</span>
+                      <span class="material-symbols-outlined">add_circle</span>
+                      <span class="material-symbols-outlined">thumb_up</span>
+                    </div>
+                    <div class="right">
+                      <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <label for="video01">8화</label><br>
+                    <progress id="video01" max="100" value="70"></progress>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="slide"><div class="item i-7"></div></div>
+
+            <div class="slide">
+              <div class="item i-8">
+                <div class="item-header">
+                  
+                  <div class="image-block">
+                    <img src="https://occ-0-3674-988.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaZGlQEt5ebkuZSKy9OhgG6EXqh6NJBGEao3aq3HQLu_0eTBH6GBZyRKhxx3rRp_sisOPWHQVv_9yr_jcPTVFXUrTzkNN-Tbd8zqOGGoc2PtWvWbKfalX2lW2DeXqhTXrujcqAvK-lrxRJAtl9QgsbnnoIwQxW5XTYbCk50RR_sPgiP3SkCM_dpguHGBG28.jpg?r=c61" alt="">
+                  </div>
+                  <div  class="video-block">
+
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/I5YRUwPy5Ww?si=NUOsv9KPiMALY081&autoplay=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                  </div>
+
+                                     <!-- 백그라운드 Grandiant설정 -->
+                   <div class="bg-style">TEST</div>
+                </div>
+                <div class="item-body">
+                  
+                  <div class="header">
+                    <div class="left">
+                      <span class="material-symbols-outlined">play_circle</span>
+                      <span class="material-symbols-outlined">add_circle</span>
+                      <span class="material-symbols-outlined">thumb_up</span>
+                    </div>
+                    <div class="right">
+                      <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </div>
+                  </div>
+                  <div class="body">
+                    <label for="video01">5화</label><br>
+                    <progress id="video01" max="100" value="30"></progress>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="slide"><div class="item i-9"></div></div>
+            <div class="slide"><div class="item i-10"></div></div>
+            <div class="slide"><div class="item i-11"></div></div>
+            <div class="slide"><div class="item i-12"></div></div>
+            <div class="slide"><div class="item i-13"></div></div>
+            <div class="slide"><div class="item i-14"></div></div>
+            <div class="slide"><div class="item i-12"></div></div>
+            <div class="slide"><div class="item i-13"></div></div>
+            <div class="slide"><div class="item i-14"></div></div>
+
+            
+          </div>
+
+
+        </section>
+
+
+
+
+        <!-- 03Section -->
+                <!-- subsection01 -->
+                <section class="sub-items-01">
+
+                  <!-- next prev btn -->
+                 <input  type="checkbox" id="sub-items-02-prev" name="prev" />
+                 <label class="prev" for="sub-items-02-prev"><span class="material-symbols-outlined">arrow_back_ios</span></label>
+                  
+                 
+                 <input type="checkbox" id="sub-items-02-next"  name="next" />
+                 <label class="next"   for="sub-items-02-next"><span class="material-symbols-outlined">arrow_forward_ios</span></label>
+               
+                 
+                 <!-- 01_slider_block -->
+                 <div class="slider">
+                   
+                   <div class="slide"><div class="item i-1"></div></div>
+                   <div class="slide"><div class="item i-2"></div></div>
+                   <div class="slide"><div class="item i-3"></div></div>
+                   <div class="slide"><div class="item i-4"></div></div>
+                   <div class="slide"><div class="item i-5"></div></div>
+                   <div class="slide"><div class="item i-9"></div></div>
+                   <div class="slide"><div class="item i-10"></div></div>
+                   <div class="slide"><div class="item i-11"></div></div>
+                   <div class="slide"><div class="item i-12"></div></div>
+                   <div class="slide"><div class="item i-13"></div></div>
+                   <div class="slide"><div class="item i-14"></div></div>
+                   <div class="slide"><div class="item i-15"></div></div>
+                   <div class="slide"><div class="item i-16"></div></div>
+                   <div class="slide"><div class="item i-17"></div></div>
+                   <div class="slide"><div class="item i-18"></div></div>
+                   <div class="slide"><div class="item i-19"></div></div>
+                   <div class="slide"><div class="item i-20"></div></div>
+                   <div class="slide"><div class="item i-21"></div></div>
+                   <div class="slide"><div class="item i-21"></div></div>
+                   <div class="slide"><div class="item i-22"></div></div>
+                   <div class="slide"><div class="item i-23"></div></div>
+                   <div class="slide"><div class="item i-24"></div></div>
+                   <div class="slide"><div class="item i-25"></div></div>
+                   <div class="slide"><div class="item i-26"></div></div>
+                   <div class="slide"><div class="item i-27"></div></div>
+                   <div class="slide"><div class="item i-28"></div></div>
+                   <div class="slide"><div class="item i-29"></div></div>         
+                 </div>  
+               </section>
+
+
+
+      </main>
+      <footer></footer>
+    </div>
+
+
+
+    <!-- BS5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
