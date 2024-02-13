@@ -13,14 +13,13 @@ HTML로는 웹의 구조를 변경하고 CSS로는 웹의 스타일을 지정 JS
 
 ------
 ### 주요 명령어   
-
-const  
-
-
 document.write  
-
-
+const  
 console.log  
+
+
+
+
 
 
 ### 수업필기
