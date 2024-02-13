@@ -5,9 +5,14 @@ HTML로는 웹의 구조를 변경하고 CSS로는 웹의 스타일을 지정 JS
 
 ------
 주요 명령어
-const 
-document.write
-console.log
+const  
+
+
+document.write  
+
+
+console.log  
+
 
 ------
 null : 빈 값이며 null자체로 값
