@@ -1,5 +1,7 @@
 JS
 -----
+![JS](https://github.com/sdee96/test/assets/155033213/afa9a4bf-1e3b-4307-a19a-2357b7b4ff90)
+
 
 JS(JavaScript)는 객체(Object)기반의 스크립트 언어이다  
 
