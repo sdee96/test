@@ -27,7 +27,8 @@ console.log
 
 
 
-### 수업필기
+수업필기
+----
 
 null : 빈 값이며 null자체로 값   
 defer : html 구조를 전부 실행 후 나중에 자바스크립트를 실행(헤더 안에 넣을 때 신경쓸 것)
@@ -41,4 +42,23 @@ forEach((item)=>{logic})배열을 배출하지 않음
 filter((item)=>{condition})  
 map((map)=>{logic})  
 reduce((누산변수,item)=>{logic},누산변수초기값)
+### 배열관련 메서드
+PUSH : 배열 끝에 요소 추가  
+POP : 배열에서 마지막 요소를 제거하고 그 요소를 반환
+forEach  :  
+
+sort :   
+
+map() : 함수의 반환 값으로 새로운 배열을 생성
+
+filter : 조건식을 만족하는 요소만 필터링해서 따로 배열  
+**map vs filter :  
+map : 여러 산술된 인자를 받아 배열을 만든다(조건식도포함)  
+filter : 조건식의 false/true 배열
+
+reduce :  
+
+
+
+
 
