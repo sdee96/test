@@ -27,7 +27,7 @@ console.log
 
 
 
-수업필기
+메모 
 ----
 
 null : 빈 값이며 null자체로 값   
