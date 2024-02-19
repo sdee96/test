@@ -21,7 +21,7 @@ HTML로는 웹의 구조를 변경하고 CSS로는 웹의 스타일을 지정 JS
 document.write  
 console.log  
 **let**  : 중복선언 불가능, 재할당 가능
-const : 중복선언 불가능, 재할당 불가능
+**const** : 중복선언 불가능, 재할당 불가능
 
 
 
@@ -31,18 +31,18 @@ const : 중복선언 불가능, 재할당 불가능
 메모 
 ----
 
-null : 빈 값이며 null자체로 값   
-defer : html 구조를 전부 실행 후 나중에 자바스크립트를 실행(헤더 안에 넣을 때 신경쓸 것)
-let : 선언 이름은 부여했으나 공간은 배정되지 않은 상태(초기 값이 들어가있지 않은 상태)  
-자료형 : 자료를 저장하는 형태를 제약하는 것  
-Object.prototype : 자바스크립트의 모든 객체가 상속하는 프로토타입 체인의 최상위 객체
-toString() : 객체의 정보를 문자열로 변환하여 반환  
-hasownProperty() : 객체가 특정 속성을 직접 소유하고 있는지 여부를 체크(True/False)  
-valueOf() : 객체의 원시값 표현을 반환
-toLocaleString() : 객체를 지역화된 문자열로 변환하여 반환  
-propertyIsEnumerable() : 특정 속성이 열거가능한 속성인지 여부를 확인  
-Construcetor : 객체를 생성한 생성자 함수를 참조  
-생성자 함수 : 객체에 필요한 공간과 객체에 대한 속성을 만드는 함수
+**null** : 빈 값이며 null자체로 값   
+**defer** : html 구조를 전부 실행 후 나중에 자바스크립트를 실행(헤더 안에 넣을 때 신경쓸 것)  
+**let** : 선언 이름은 부여했으나 공간은 배정되지 않은 상태(초기 값이 들어가있지 않은 상태)    
+**자료형** : 자료를 저장하는 형태를 제약하는 것    
+**Object.prototyp**e : 자바스크립트의 모든 객체가 상속하는 프로토타입 체인의 최상위 객체  
+**toString()** : 객체의 정보를 문자열로 변환하여 반환    
+**hasownProperty(**) : 객체가 특정 속성을 직접 소유하고 있는지 여부를 체크(True/False)    
+**valueOf()** : 객체의 원시값 표현을 반환  
+**toLocaleString()** : 객체를 지역화된 문자열로 변환하여 반환    
+**propertyIsEnumerable()** : 특정 속성이 열거가능한 속성인지 여부를 확인    
+**Construceto**r : 객체를 생성한 생성자 함수를 참조    
+**생성자 함수** : 객체에 필요한 공간과 객체에 대한 속성을 만드는 함수  
 
 
 
@@ -71,6 +71,7 @@ filter : 조건식의 false/true 배열
 ### JS 흐름제어
 ---
 **IF** : if elseif else => 기본적인 문법이며 else에는 if와 elseif를 제외한 모든 경우이므로 조건식을 작성하지 않아도 된다  
+  
 **switch** : 키보드 이벤트에 반응하는 코드를 작성할 때 사용  
 ex) switch() {  
   case ''    
@@ -84,8 +85,9 @@ ex)
 let i=0; // (탈출용 변수)  
 while(i<10) // 반복하기 위한 조건  
 {  
-document.write("Hello  WoRld<br>")  
+document.write("Hello  World")  
 i++ // 반복문을 탈출하기 위한 연산 작업 }  
+  
 **for**
 For(변수값;조건식;연산식) => 기본 문법
 ex)For(let i=0;i<10;i++)
@@ -99,10 +101,14 @@ ex)For(let i=0;i<10;i++)
 ---
 [함수](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions)
 
-[Hoisting](https://developer.mozilla.org/ko/docs/Glossary/Hoisting)
-**호이스팅** : 인터프리터가 코드를 실행하기 전에 함수,변수,클래스 또는 임포트(import)의 선언문을 해당 범위의 맨 위로 끌어올리는 것처럼 보이는 현상을 뜻함  
+[**Hoisting**](https://developer.mozilla.org/ko/docs/Glossary/Hoisting)
+
+인터프리터가 코드를 실행하기 전에 함수,변수,클래스 또는 임포트(import)의 선언문을 해당 범위의 맨 위로 끌어올리는 것처럼 보이는 현상을 뜻함  
+
+
 함수 이름이 중첩되더라도 허용되기에 에러를 확인하기 힘들다.  
-const name=()=>{} 형태로 함수를 생성시 hoisting이 적용되지 않아 권장된다  
+const name=()=>{} 형태로 함수를 생성시 hoisting이 적용되지 않아 권장된다
+
 
 
 
