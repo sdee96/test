@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //while 기본
+        // let i=0; // 탈출용 변수
+        // while(i<10) // 반복하기 위한 조건
+        // {
+        //     document.write("HELLO WORLD<br>")
+        //     i++; //연산식 -> 반복문을 탈출하기 위한 연산작업
+
+        // }
+        // document.write("1:" + i);
+        
+        //for문 기본 (변수값;조건식;연산식)
+        // for(let i =0;i<10;i++)
+        // {
+        //     document.write("HELLO WORLD<br>");
+        // }
+        //for in 문(배열용)
+       let arr=[10,20,30,40,50];
+        console.log(arr.length);
+ 
+        // // for(let i=0;i<arr.length;i++)
+        // //     console.log(arr[i]);
+        // for(let i in arr){
+        //     console.log(arr[i]);
+        // }
+       
+        //배열함수 forEach
+        // arr.forEach((item)=>{console.log(item)});
+
+         //for of 문(object용)  순서를 잡아줄 수 없다
+         const obj= {"name " : " 홍길동" , "age": 55, "addr" : "대구"};
+        //  for(let a in obj){
+        //     console.log(a,obj[a]);
+        //  }
+        // for(let a of obj){
+        //     console.log(a);
+        // }
+        //{}.{}.{}, 사용해보기
+        const ArrObj= [
+            {"name " : " 홍길동" , "age": 55, "addr" : "대구"},
+            {"name " : " 서길동" , "age": 44, "addr" : "울산"},
+            {"name " : " 남길동" , "age": 33, "addr" : "인천"},
+
+        ];
+            for(let obj of ArrObj){
+                console.log(obj);
+            }
+
+
+
+        //for in : 순서가 있는 자료구조에 적용이 가능(배열,리스트,스택,큐,덱....)
+        //      : 순서가 없는 자료구조에 적용이 가능(Map(OBject형 데이터 Set),set)
+
+        //for of : 순서가 있는 자료구조에만 적용(배열,리스트,스택,큐,덱......)
+    </script> 
+    
+</body>
+</html>
