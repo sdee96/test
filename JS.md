@@ -20,7 +20,7 @@ HTML로는 웹의 구조를 변경하고 CSS로는 웹의 스타일을 지정 JS
 ### 주요 명령어   
 document.write  
 console.log  
-let  : 중복선언 불가능, 재할당 가능
+**let**  : 중복선언 불가능, 재할당 가능
 const : 중복선언 불가능, 재할당 불가능
 
 
@@ -48,6 +48,7 @@ Construcetor : 객체를 생성한 생성자 함수를 참조
 
 ----------------------------------------------------------
 ### 배열관련 메서드
+---
 PUSH : 배열 끝에 요소 추가  
 POP : 배열에서 마지막 요소를 제거하고 그 요소를 반환  
 reduce : 배열의 요소를 하나로 줄이는 함수, 배열의 각 요소를 순회하면서 누적된 값을 계산하고 최종 결과를 반환 할 수 있음  
@@ -62,6 +63,48 @@ filter((item)=>{condition})
 map : 여러 산술된 인자를 받아 배열을 만든다(조건식도포함)  
 map((map)=>{logic})
 filter : 조건식의 false/true 배열  
+
+
+
+
+---
+### JS 흐름제어
+---
+**IF** : if elseif else => 기본적인 문법이며 else에는 if와 elseif를 제외한 모든 경우이므로 조건식을 작성하지 않아도 된다  
+**switch** : 키보드 이벤트에 반응하는 코드를 작성할 때 사용  
+ex) switch() {  
+  case ''    
+    break;    
+    
+      
+}  
+**while**
+기본문법  
+ex)  
+let i=0; // (탈출용 변수)  
+while(i<10) // 반복하기 위한 조건  
+{  
+document.write("Hello  WoRld<br>")  
+i++ // 반복문을 탈출하기 위한 연산 작업 }  
+**for**
+For(변수값;조건식;연산식) => 기본 문법
+ex)For(let i=0;i<10;i++)
+
+
+  
+
+
+---
+### JS 함수
+---
+[함수](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions)
+
+[Hoisting](https://developer.mozilla.org/ko/docs/Glossary/Hoisting)
+**호이스팅** : 인터프리터가 코드를 실행하기 전에 함수,변수,클래스 또는 임포트(import)의 선언문을 해당 범위의 맨 위로 끌어올리는 것처럼 보이는 현상을 뜻함  
+함수 이름이 중첩되더라도 허용되기에 에러를 확인하기 힘들다.  
+const name=()=>{} 형태로 함수를 생성시 hoisting이 적용되지 않아 권장된다  
+
+
 
 
 
