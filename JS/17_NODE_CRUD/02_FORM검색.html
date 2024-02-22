@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <input type ="text">
+        <input type ="text">
+        
+    </form>
+
+    <form action="" name="joinForm">
+        <input type ="text" name="username">
+        <input type ="text" name="phone">
+        
+    </form>
+
+
+    <form action="" name="emailAuthForm">
+        <input type ="text">
+        <input type ="text">
+        
+    </form>
+    
+
+    <script>
+        const formEls = document.forms;
+        // console.log(formEls)
+
+        // //개별 폼 접근
+        // console.log(formEls[0]);
+        // console.log(formEls[1]);
+        // console.log(formEls[2]);
+
+
+        // //개별 폼 내 요소 접근
+        // console.log(formEls[0][0]);
+        // console.log(formEls[0][1]);
+        
+        // formEls[0][0].value = "하상훈"   // 요소 안에 값 넣기
+        // formEls[1][0].value = "하상훈"   // 요소 안에 값 넣기
+        //name부여로  form 내의 요소 접근
+        const joinFormrmEl = document.joinForm;
+        joinFormrmEl[0].value ="조인폼"
+        joinFormrmEl.username.value="조인폼 유저네임"
+        joinFormrmEl.phone.value="조인폼 폰"
+    </script>
+</body>
+</html>
